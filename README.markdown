@@ -1,6 +1,8 @@
 Helperiffic
 ===========
 
+Object-oriented helpers for an object-oriented world!
+
 Setting Up
 ----------
 
@@ -26,10 +28,20 @@ Sinatra Class:
     
 Sinatra Base:
 
-  # blah_app.rb
-  require 'sinatra/base'
-  require 'helperiffic'
+    # blah_app.rb
+    require 'sinatra/base'
+    require 'helperiffic'
   
-  class BlehApp < Sinatra::Base
-    register Sinatra::Helperiffic
-  end
+    class BlehApp < Sinatra::Base
+      register Sinatra::Helperiffic
+      
+      class FooHelper
+        def foo
+          "called foo"
+        end
+      end
+      
+      get '/blah' do
+        hb.foo
+      end
+    end
