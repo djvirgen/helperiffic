@@ -1,0 +1,35 @@
+Helperiffic
+===========
+
+Setting Up
+----------
+
+Install the gem
+
+    $ gem install helperiffic
+    
+Sinatra Class:
+
+    # blah_app.rb
+    require 'sinatra'
+    require 'sinatra/helperiffic'
+    
+    class FooHelper
+      def foo
+        "called foo"
+      end
+    end
+    
+    get '/blah' do
+      hb.foo
+    end
+    
+Sinatra Base:
+
+  # blah_app.rb
+  require 'sinatra/base'
+  require 'helperiffic'
+  
+  class BlehApp < Sinatra::Base
+    register Sinatra::Helperiffic
+  end
