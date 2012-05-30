@@ -23,7 +23,7 @@ Sinatra Classic:
     end
     
     get '/blah' do
-      hb.foo
+      helper.foo
     end
     
 Sinatra Base:
@@ -42,6 +42,6 @@ Sinatra Base:
       end
       
       get '/blah' do
-        hb.foo
+        helper.foo
       end
     end
