@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'helperiffic'
-  s.version     = '0.0.1'
+  s.version     = '1.0.0'
   s.date        = '2012-05-30'
   s.summary     = "Better Helpers for Rails/Sinatra"
   s.description = "Finally, helpers that make sense!"
