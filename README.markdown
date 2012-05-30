@@ -10,7 +10,7 @@ Install the gem
 
     $ gem install helperiffic
     
-Sinatra Class:
+Sinatra Classic:
 
     # blah_app.rb
     require 'sinatra'
